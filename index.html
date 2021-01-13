@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="survey_style.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1 id="title">Dungeons & Dragons Survey Form</h1>
+        <p id="description">This survey will determine what your next character should be.</p>
+        </div>
+        <div>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Enter your name here"></label><br>
+                <label id="email-label" for="email">E-mail: <input type="email" id="email" name="email" placeholder="Enter your E-mail address here"></label><br>
+                <label id="number-label" for="numCharacters"># of charcters you've played before: <input type="number" id="number" name="number" min=0 max=100 placeholder="Enter the number of D&D characters you've played as"></label><br>
+                <label id="dropdown-label" for="dropdown">Favorite of these characters: 
+                    <select id="dropdown" name="dropdown" placeholder="Choose one">
+                        <option value="Human-Fighter">Human Fighter</option>
+                        <option value="Elven-Ranger">Elven Ranger</option>
+                        <option value="Dwarven-Cleric">Dwarven Cleric</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label><br>
+                <p>Favorite attribute to maximize</p><br>
+                <input type="radio" id="attribute" name="attribute" value="strength">
+                <label id="attribute-label" for="attribute">Strength</label><br>
+                <input type="radio" id="attribute" name="attribute" value="dexterity">
+                <label id="attribute-label" for="attribute">Dexterity</label><br>
+                <input type="radio" id="attribute" name="attribute" value="constitution">
+                <label id="attribute-label" for="attribute">Constitution</label><br>
+                <input type="radio" id="attribute" name="attribute" value="intelligence">
+                <label id="attribute-label" for="attribute">Intelligence</label><br>
+                <input type="radio" id="attribute" name="attribute" value="wisdom">
+                <label id="attribute-label" for="attribute">Wisdom</label><br>
+                <input type="radio" id="attribute" name="attribute" value="charisma">
+                <label id="attribute-label" for="attribute">Dexterity</label><br>
+                <p>Favorite Skills</p><br>
+                <input type="checkbox" id="skill" name="skill" value="acrobatics">
+                <label id="skill-label" for="skill">Acrobatics</label><br>
+                <input type="checkbox" id="skill" name="skill" value="arcana">
+                <label id="skill-label" for="skill">Arcana</label><br>
+                <input type="checkbox" id="skill" name="skill" value="athletics">
+                <label id="skill-label" for="skill">Athletics</label><br>
+                <label id="textarea-label" for="textarea">Please let me know if this survey has been helpful</label>
+                <input type="text" id="textarea" name="textarea">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>

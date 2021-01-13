@@ -1,0 +1,12 @@
+body {
+    background-color: #cc0000;
+}
+
+#main {
+    background-color: #cccccc;
+}
+
+input {
+    height: 25px;
+    width: 25%;
+}
